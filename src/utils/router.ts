@@ -132,6 +132,14 @@ const list = {
       tag: '',
       tag_color: ['', '']
     },
+        {
+      name: ['库迪咖啡New', '咖啡标签'],
+      logo: '/images/icons/cotti.webp',
+      url: '/tools/cotti-new',
+      color: ['#CF323B', '#ff6069'],
+      tag: '',
+      tag_color: ['', '']
+    },
     {
       name: ['照片打卡', '纪念卡'],
       logo: '/images/photo.png',

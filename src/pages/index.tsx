@@ -56,21 +56,21 @@ export default function index() {
       <div className='my-4 relative p-4'>
         <img src='/images/big-sticker_logo_2.webp' alt='logo' className='w-12 h-12' />
         <div className='text-3xl op90 mt-5'>{getMsg()}</div>
-        <div className='text-lg op90 mt-2'>没想到快死的站点突然流量暴涨！恢复更新预告！</div>
+        {/* <div className='text-lg op90 mt-2'>没想到快死的站点突然流量暴涨！恢复更新预告！</div> */}
         <div className='flex gap-4 items-center relative mt-4'>
-          <CopyToClipboard text='752693422'
+          <CopyToClipboard text=''
             onCopy={() => message.success({ content: 'QQ群号 已复制' })}>
             <div className="bg-white h-8 w-8 flex items-center justify-center rounded-md">
               <div className="i-ri-qq-fill text-xl text-[#0099FF]" />
             </div>
           </CopyToClipboard>
-          <div
+          {/* <div
             onClick={() => message.warning({ content: '要不 考虑一下加QQ群？' })}>
             <div className='bg-white h-8 w-8 flex items-center justify-center rounded-md' >
               <div className="i-ri-wechat-fill text-xl text-[#07C160]" />
             </div>
-          </div>
-          <a href='https://github.com/YuzeTT/small-sticker' className='bg-white h-8 w-8 flex items-center justify-center rounded-md'>
+          </div> */}
+          {/* <a href='https://github.com/YuzeTT/small-sticker' className='bg-white h-8 w-8 flex items-center justify-center rounded-md'>
             <div className="i-ri-github-fill text-xl text-[#1F2328]" />
           </a>
           <a href='https://www.xiaohongshu.com/user/profile/5dbc28ee00000000010047ef' className='bg-white h-8 w-8 flex items-center justify-center rounded-md'>
@@ -78,49 +78,14 @@ export default function index() {
           </a>
           <a href='https://afdian.net/a/sticker' className='bg-white h-8 w-8 flex items-center justify-center rounded-md overflow-hidden'>
             <img src="/images/aifadian-2.png" alt="red" className='w-5 h-5 rounded-sm' />
-          </a>
+          </a> */}
         </div>
-        {!isVip().is_vip ?
-          <>
-            <div className='card p-2 rounded-2xl mt-4'>
-              {/* <div className='mb-3 mt-1 mx-2 text-zinc-600 text-sm'>公告</div> */}
-              <div flex gap-2>
+        
 
-                <div w-13 h-13 text-lg flex items-center justify-center bg-red-100 rounded-md font-bold text-red-600>
-                  <div>喜报</div>
-                </div>
-                <div flex-1>
-                  <div font-bold text-red-600 text-lg>本站即日起取消VIP制度</div>
-                  <div text-sm op80>我想开了，我觉得这么好的东西应该免费。所以取消了VIP功能限制，如果您手头富裕欢迎赞助我们以维持站点运营~ 也欢迎去 <a href="https://github.com/YuzeTT/small-sticker" text-blue-600 underline>Github</a> 给我个Star 这会使我大脑旋转！</div>
-                </div>
-              </div>
-
-              <div className="h-[1px] w-full bg-gray-200 my-2"></div>
-              <div mt-2>
-                <div text-xs op50>站点资金情况</div>
-                <div mt-1 flex items-end>
-
-                  <div font-bold flex-1 >
-                    <div text-xl>资金一般</div>
-                    <div>
-                      <Progress steps={5} percent={50} showInfo={false} strokeColor={'#f97316'} />
-                    </div>
-                  </div>
-                  <div flex flex-col>
-                    <button rounded-md className='text-right font-bold text-sm text-orange-600 py-0.5' onClick={() => message.warning({ content: '代码还没写完qwq' })}>查看赞助列表</button>
-                    <div mt-1></div>
-                    <a px-3 py-1 rounded-md className='bg-orange-500 font-bold text-md text-white' href="/coffee">☕ 请我喝咖啡</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </> : ''
-        }
-
-        <div className='card p-2 rounded-2xl mt-4'>
+        {/* <div className='card p-2 rounded-2xl mt-4'>
           <div text-xs op50 mb-1>公告</div>
           <div>新版站点正在进行早期测试，可能会随机刷新出各种BUG！！新增自由拖拽布局，编辑更自由，100毫秒内急速出图。PS：仅上线瑞幸咖啡标签。<a href="https://beta.sticker.hsott.cn/" text-blue-600 underline>戳我传送</a></div>
-        </div>
+        </div> */}
 
 
         {/* <a href='/user' className='absolute top-0 right-0 m-4 bg-green-100 p-1 rounded-full flex items-center text-green-700'>
@@ -203,33 +168,7 @@ export default function index() {
           </div>
         ))}
       </div> */}
-      <div className='card p-2 rounded-2xl mt-4'>
-        <div className='mb-3 mt-1 mx-2 text-zinc-600 text-sm'>友情链接</div>
-        <div className='grid grid-cols-2 gap-2'>
-          <a href="https://static.miplus.cloud/label/page/download.html" target='_blank' className='col-span-2 flex items-center gap-3 bg-purple-100 p-2 rounded-md'>
-            <img src="/images/icons/app-logo.png" alt="" className='w-14 h-14 rounded' />
-            <div>
-              <div className='text-lg font-bold text-purple-800'>票根生成器</div>
-              <div className='flex items-center mt-1 gap-2'>
-                <div className='text-xs px-1 py-0.5 bg-purple-200 text-purple-800 rounded'>社区实现</div>
-                <div className='text-xs px-1 py-0.5 bg-blue-200 text-blue-800 rounded'>Android</div>
-                <div className='text-xs px-1 py-0.5 bg-blue-200 text-blue-800 rounded'>iOS</div>
-              </div>
-            </div>
-          </a>
-          <a href="https://target.elfmc.com/" target='_blank' className='col-span-2 flex items-center gap-3 bg-orange-100 p-2 rounded-md'>
-            <img src="/images/icons/fq-icon.svg" alt="" className='w-14 h-14 rounded p-3 bg-white' />
-            <div>
-              <div className='text-lg font-bold text-orange-800'>目标番茄钟</div>
-              <div className='flex items-center mt-1 gap-2'>
-                {/* <div className='text-xs px-1 py-0.5 bg-purple-200 text-purple-800 rounded'>社区实现</div> */}
-                <div className='text-xs px-1 py-0.5 bg-orange-200 text-orange-800 rounded'>Web</div>
-                {/* <div className='text-xs px-1 py-0.5 bg-blue-100 text-blue-800 rounded'>iOS</div> */}
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
+
 
     </div >
   )
