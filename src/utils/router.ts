@@ -16,8 +16,24 @@ const list = {
       logo: '/images/icons/lucking_coffee.webp',
       url: '/lucking_coffee',
       color: ['#0022AB', '#1641eb'],
-      tag: '热门',
-      tag_color: hot
+      tag: '待更新',
+      tag_color: ['#a5a5a5ff', '#464646ff']
+    },
+    {
+      name: ['库迪咖啡', '咖啡标签'],
+      logo: '/images/icons/cotti.webp',
+      url: '/cottiSelect',
+      color: ['#CF323B', '#ff6069'],
+      tag: '新更新',
+      tag_color: ['#f5dedfff', '#fa0916ff']
+    },
+{
+      name: ['星巴克', '咖啡标签'],
+      logo: '/images/starbucks.png',
+      url: '/tools/starbucks',
+      color: ['#116E49', '#0f8b5a'],
+      tag: '新上线',
+      tag_color: ['#dcfce7', '#16a34a']
     },
     {
       name: ['一点点', '奶茶标签'],
@@ -27,14 +43,7 @@ const list = {
       tag: '新上线',
       tag_color: ['#dcfce7', '#16a34a']
     },
-    {
-      name: ['人生四格', '2x2版 106mm*156mm(含3mm出血)'],
-      logo: '/images/icons/rssg-2.webp',
-      url: '/tools/rssg-2',
-      color: ['#F1A050', '#F3AA3C'],
-      tag: '新上线',
-      tag_color: ['#dcfce7', '#16a34a']
-    },
+    
     {
       name: ['Apple Music', '播放器 透卡/小卡 88.5mm*57m(含出血3mm)'],
       logo: '/images/icons/music.webp',
@@ -43,14 +52,7 @@ const list = {
       tag: '新上线',
       tag_color: ['#dcfce7', '#16a34a']
     },
-    {
-      name: ['星巴克', '咖啡标签'],
-      logo: '/images/starbucks.png',
-      url: '/tools/starbucks',
-      color: ['#116E49', '#0f8b5a'],
-      tag: '新上线',
-      tag_color: ['#dcfce7', '#16a34a']
-    },
+    
     {
       name: ['人生二格', '85mm*54mm 明信片'],
       logo: '/images/icons/rseg.webp',
@@ -66,6 +68,14 @@ const list = {
       color: ['#F1A050', '#F3AA3C'],
       tag: '',
       tag_color: []
+    },
+    {
+      name: ['人生四格', '2x2版 106mm*156mm(含3mm出血)'],
+      logo: '/images/icons/rssg-2.webp',
+      url: '/tools/rssg-2',
+      color: ['#F1A050', '#F3AA3C'],
+      tag: '新上线',
+      tag_color: ['#dcfce7', '#16a34a']
     },
     {
       name: ['Instagram', '三寸 小卡/透卡'],
@@ -124,22 +134,7 @@ const list = {
       tag: '',
       tag_color: ['', '']
     },
-    {
-      name: ['库迪咖啡', '咖啡标签'],
-      logo: '/images/icons/cotti.webp',
-      url: '/tools/cotti',
-      color: ['#CF323B', '#ff6069'],
-      tag: '',
-      tag_color: ['', '']
-    },
-        {
-      name: ['库迪咖啡New', '咖啡标签'],
-      logo: '/images/icons/cotti.webp',
-      url: '/tools/cotti-new',
-      color: ['#CF323B', '#ff6069'],
-      tag: '',
-      tag_color: ['', '']
-    },
+    
     {
       name: ['照片打卡', '纪念卡'],
       logo: '/images/photo.png',

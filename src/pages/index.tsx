@@ -1,11 +1,10 @@
-import { message, Progress } from 'antd'
 // import { Button } from '@chakra-ui/react'
 // import { green } from 'antd/lib/c';
 // import { useNavigate } from 'react-router-dom';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+// import { CopyToClipboard } from 'react-copy-to-clipboard';
 import list from '../utils/router'
 // import FollowMe from '../components/FollowMe';
-import isVip from '../utils/isVip';
+// import isVip from '../utils/isVip';
 import AccountButton from "../components/AccountButton";
 
 export default function index() {
@@ -49,21 +48,21 @@ export default function index() {
       <div className='w-40 h-40 rounded-full bg-green-100 absolute top-10 -right-10 z-0 blur-circle'></div>
       <div className='w-40 h-40 rounded-full bg-purple-100 absolute top-30 left-10 z-0 blur-circle'></div> */}
 
-      <div absolute className='-left-5 -top-5 -right-5 z-0'>
+      {/* <div absolute className='-left-5 -top-5 -right-5 z-0'>
         <img src="/images/focus-bg.png" alt="" />
-      </div>
+      </div> */}
 
       <div className='my-4 relative p-4'>
         <img src='/images/big-sticker_logo_2.webp' alt='logo' className='w-12 h-12' />
         <div className='text-3xl op90 mt-5'>{getMsg()}</div>
         {/* <div className='text-lg op90 mt-2'>没想到快死的站点突然流量暴涨！恢复更新预告！</div> */}
-        <div className='flex gap-4 items-center relative mt-4'>
+        {/* <div className='flex gap-4 items-center relative mt-4'>
           <CopyToClipboard text=''
             onCopy={() => message.success({ content: 'QQ群号 已复制' })}>
             <div className="bg-white h-8 w-8 flex items-center justify-center rounded-md">
               <div className="i-ri-qq-fill text-xl text-[#0099FF]" />
             </div>
-          </CopyToClipboard>
+          </CopyToClipboard> */}
           {/* <div
             onClick={() => message.warning({ content: '要不 考虑一下加QQ群？' })}>
             <div className='bg-white h-8 w-8 flex items-center justify-center rounded-md' >
@@ -79,7 +78,7 @@ export default function index() {
           <a href='https://afdian.net/a/sticker' className='bg-white h-8 w-8 flex items-center justify-center rounded-md overflow-hidden'>
             <img src="/images/aifadian-2.png" alt="red" className='w-5 h-5 rounded-sm' />
           </a> */}
-        </div>
+        {/* </div> */}
         
 
         {/* <div className='card p-2 rounded-2xl mt-4'>
