@@ -1,9 +1,11 @@
 import { Space, message } from "antd";
 import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import Line from "../components/Line";
 
 export default function CottiSelect() {
   const [messageApi, contextHolder] = message.useMessage();
+  const navigate = useNavigate();
 
   const templateList = [
     {
@@ -31,12 +33,13 @@ export default function CottiSelect() {
   const handleTemplateClick = useCallback(
     (url: string) => {
       if (url && url !== "#") {
-        window.open(url, "_self");
+        // 使用React Router的navigate替代window.open以保持浏览历史
+        navigate(url);
       } else {
         messageApi.warning("该模板暂未开放，敬请期待！");
       }
     },
-    [messageApi]
+    [messageApi, navigate]
   );
 
   return (

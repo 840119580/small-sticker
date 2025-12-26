@@ -32,6 +32,24 @@
   src: local('sans'), url('/fonts/FangZhengHeiTiJianTi.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'HanSansBold';
+  font-style: normal;
+  src: local('HanSansBold'), url('/fonts/SourceHanSans-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HanSansNormal';
+  font-style: normal;
+  src: local('HanSansNormal'), url('/fonts/SourceHanSans-Normal.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HanSansMedium';
+  font-style: normal;
+  src: local('HanSansMedium'), url('/fonts/SourceHanSans-Medium.otf') format('truetype');
+}
+
 body {
   margin: 0;
   /* background-color: #EFEFEF; */
